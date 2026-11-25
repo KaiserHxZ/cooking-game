@@ -1,0 +1,30 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: #241611;
+  color: #fff6e3;
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stage { text-align: center; padding: 12px; }
+.hint { margin: 8px 0; font-size: 14px; color: #e8c9a0; }
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+canvas#game {
+  display: block;
+  margin: 0 auto;
+  width: min(1280px, 96vw);
+  height: auto;
+  border: 3px solid #6e4520;
+  border-radius: 10px;
+  background: #7a5238;
+  cursor: pointer;
+}
